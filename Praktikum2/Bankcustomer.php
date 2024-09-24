@@ -43,7 +43,7 @@ class BankCustomer{
     public function insertCard(){
         echo "kartu dimasukkan : <br>";
         echo "nama customer: " . $this->customerName . '<br>';
-        echo "alamat :" . $this->address . '<br>';
+        echo "address :" . $this->address . '<br>';
         echo "email :" . $this->email . '<br>';
         echo "card :" . $this->card . '<br>';
         echo "acc :" . $this->acc . '<br>';
