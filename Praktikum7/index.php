@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 include "controller/BukuController.php";
@@ -18,4 +19,26 @@ switch($request){
     case '/index.php/hapus';
     $aplikasi->hapus();
     break;
+=======
+<?php
+
+include "controller/BukuController.php";
+
+$aplikasi = new BukuController();
+
+$request = $_SERVER["REQUEST_URI"];
+$request = parse_url($request, PHP_URL_PATH);
+
+switch($request){
+    case '/';
+    case '/index.php';
+    $aplikasi->jalankan();
+    break;
+    case '/index.php/buku/simpan';
+    $aplikasi->simpan();
+    break;
+    case '/index.php/hapus';
+    $aplikasi->hapus();
+    break;
+>>>>>>> 3b0fdfc (menambahkan tugas)
 }
